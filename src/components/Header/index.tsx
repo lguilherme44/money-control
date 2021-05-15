@@ -4,7 +4,6 @@ import { Container, Content } from './styles';
 import { shade } from 'polished';
 import ThemeCustomDefault from '../../styles/themes/context';
 import Switch from 'react-switch';
-import logoImg from '../../assets/logo.svg';
 
 interface HeaderProps {
    onOpenNewTransactionModal: () => void;
@@ -17,7 +16,6 @@ export function Header({ onOpenNewTransactionModal }: HeaderProps) {
    return (
       <Container>
          <Content>
-            {/* <img src={logoImg} alt="gvmoney" /> */}
             <button type="button" onClick={onOpenNewTransactionModal}>
                Nova transação
             </button>
