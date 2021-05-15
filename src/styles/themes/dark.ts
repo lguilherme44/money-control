@@ -9,7 +9,7 @@ export default {
       alternative: '#6933ff',
       secondary: '#70CC40',
       third: '#e52e4d',
-      textDefault: shade(0.6, '#e3e3e3'),
+      textDefault: shade(0.2, '#e3e3e3'),
       textLight: '#e3e3e3',
       background: '#1f1f1f',
       text: shade(0.2, '#e3e3e3'),
