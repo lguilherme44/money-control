@@ -8,9 +8,10 @@ Projeto para fins de estudo e fixação de aprendizados adquiridos em treinament
 ![2](https://user-images.githubusercontent.com/18725901/118345598-000cb580-b50c-11eb-9b00-464b4bb00a98.png)
 
 
-Dicas: 
-1 - Clone o projeto
+# Dicas de como utilizar: 
 
-2 - execute: yarn ou npm install para instalar as dependências
+### 1 - Clone o projeto
 
-3 - execute: yarn start para rodar o projeto
+### 2 - execute: yarn ou npm install para instalar as dependências
+
+### 3 - execute: yarn start para rodar o projeto
