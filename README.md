@@ -9,8 +9,8 @@ Projeto para fins de estudo e fixação de aprendizados adquiridos em treinament
 
 
 Dicas: 
-1 - ### Clone o projeto
+1 - Clone o projeto
 
-2 - ### execute: yarn ou npm install para instalar as dependências
+2 - execute: yarn ou npm install para instalar as dependências
 
-3 - ### execute: yarn start para rodar o projeto
+3 - execute: yarn start para rodar o projeto
