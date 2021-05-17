@@ -6,6 +6,11 @@ export const Container = styled.div`
    gap: 2rem;
    margin-top: -10rem;
 
+   @media (max-width: 640px) {
+      width: 100%;
+      grid-template-columns: 1fr ;
+   }
+
    div {
       background: ${(props) => props.theme.colors.primary};
       color: ${(props) => props.theme.colors.textDefault};

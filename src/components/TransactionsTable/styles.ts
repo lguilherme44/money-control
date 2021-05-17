@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
    margin-top: 4rem;
+   overflow-x: auto;
 
    table {
       width: 100%;
@@ -20,7 +21,7 @@ export const Container = styled.div`
          border: 0;
          background: ${(props) => props.theme.colors.primary};
          color: ${(props) => props.theme.colors.textDefault};
-         border-radius: 0.25rem;
+         /* border-radius: 0.25rem; */
 
          &:first-child {
             color: var(--text-title);

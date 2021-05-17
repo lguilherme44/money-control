@@ -10,6 +10,9 @@ import dark from './styles/themes/dark';
 import light from './styles/themes/light';
 import { useState } from 'react';
 
+/* tailwindcss */
+import './styles/tailwind.css';
+
 export function App() {
    const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark);
    const [isNewTransactionModalOpen, SetIsNewTransactionModalOpen] =
