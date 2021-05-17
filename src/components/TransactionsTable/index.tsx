@@ -29,7 +29,7 @@ export function TransactionsTable() {
       <Container>
          <table>
             <thead>
-               <tr>
+               <tr className="header-table">
                   <th>Titulo</th>
                   <th>Valor</th>
                   <th>Categoria</th>
