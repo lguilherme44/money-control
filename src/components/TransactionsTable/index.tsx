@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
-import { Container } from './styles';
+import { FormEvent, useEffect, useState } from 'react';
+import { Container, ButtonCustom } from './styles';
 import { api } from '../../services/api';
+import { MdEdit, MdDelete } from 'react-icons/md';
 
 interface TransactionsTableProps {
-   id: number;
+   id?: number;
    title: string;
    amount: number;
    type: string;
@@ -12,6 +13,12 @@ interface TransactionsTableProps {
 
 export function TransactionsTable() {
    const [transactionsFromApi, setTransactionsFromApi] = useState([]);
+   const [field, setField] = useState<TransactionsTableProps>({
+      title: '',
+      amount: 0,
+      type: '',
+      category: '',
+   });
 
    async function loadTransactionsFromApi() {
       const { data } = await api.get('transactions');
@@ -19,6 +26,11 @@ export function TransactionsTable() {
       if (data) {
          setTransactionsFromApi(data);
       }
+   }
+
+   function handleChangeInput(e: FormEvent) {
+      // setField(...field);
+      console.log(e);
    }
 
    useEffect(() => {
@@ -42,15 +54,22 @@ export function TransactionsTable() {
                   (transactions: TransactionsTableProps, index) => (
                      <>
                         <tr>
-                           <td className={transactions.type}>
+                           <td
+                              className={transactions.type}
+                              onChange={(e) => setField(e.target.value)}
+                           >
                               {transactions.title}
                            </td>
                            <td>{transactions.amount}</td>
                            <td>{transactions.category}</td>
                            <td>10/05/2021</td>
                            <td>
-                              <button>Editar</button>
-                              <button>Deletar</button>
+                              <ButtonCustom>
+                                 <MdEdit color="#5429CC" />
+                              </ButtonCustom>
+                              <ButtonCustom>
+                                 <MdDelete color="#e52e4d" />
+                              </ButtonCustom>
                            </td>
                         </tr>
                      </>

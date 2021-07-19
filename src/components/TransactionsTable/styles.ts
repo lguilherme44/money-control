@@ -10,15 +10,6 @@ export const Container = styled.div`
       border-spacing: 0, 0.5rem;
       background: ${(props) => props.theme.colors.primary};
       border-radius: 0.25rem;
-/*
-   thead {
-      tr {
-         &.header-table{
-            border-bottom:  1px solid ${(props) => props.theme.colors.textLight};
-         }
-      }
-   } */
-
 
       th {
          color: ${(props) => props.theme.colors.text};
@@ -33,6 +24,10 @@ export const Container = styled.div`
          border: 0;
          color: ${(props) => props.theme.colors.textDefault};
 
+         button {
+            padding: 1rem;
+         }
+
          &:first-child {
             color: var(--text-title);
          }
@@ -45,5 +40,11 @@ export const Container = styled.div`
             color: var(--red);
          }
       }
+   }
+`;
+
+export const ButtonCustom = styled.button`
+   svg {
+      color: ${(props) => props.color};
    }
 `;
